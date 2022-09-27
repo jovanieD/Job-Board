@@ -12,6 +12,10 @@ font-family: 'Russo One', sans-serif;
 font-size: 60px;
 }
 
-.job_data td{
-    margin: 200px;
+.table-auto tbody tr td{
+    margin-bottom: 200px;
+}
+
+.table-auto thead tr th{
+    font-size: 20px;
 }

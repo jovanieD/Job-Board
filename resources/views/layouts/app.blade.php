@@ -62,7 +62,7 @@
             <th class="px-4 py-3 title-font tracking-wider font-medium text-black text-sm bg-gray-100">Date</th>
           </tr>
         </thead>
-        <tbody class="job_data">
+        <tbody>
           <tr>
             <td class="px-4 py-3">Start</td>
             <td class="px-4 py-3">5 Mb/s</td>
