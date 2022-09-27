@@ -6,3 +6,12 @@
 #jobhiring{
     font-family: 'Bevan', cursive;
 }
+
+.title-font{
+font-family: 'Russo One', sans-serif;
+font-size: 60px;
+}
+
+.job_data td{
+    margin: 200px;
+}
