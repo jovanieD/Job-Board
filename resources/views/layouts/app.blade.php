@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/dropdown.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Russo+One&display=swap" rel="stylesheet">
@@ -18,12 +19,22 @@
       <span class="ml-3 text-xl">Job Board</span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center  text-base justify-center">
-      <div class="relative right-80 " >
+      <div class="left_btn" >
+
         <button type="button" class="static mr-2 px-6 py-2 border-2 border-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Job Search</button>
-        <button type="button" class="static mr-40 px-6 py-2 border-2 border-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Job Event</button>
+        
+        <div class="dropdown static mr-2 px-6 py-2 border-2 border-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" style="color:black;">
+  <button onclick="myFunction()" class="dropbtn">JOB EVENT</button>
+  <div id="myDropdown" class="dropdown-content rounded-r-lg">
+    <a href="#">testing for</a>
+    <a href="#">drop menus</a>
+    <a href="#">link menus</a>
+  </div>
+</div>
+        
       </div>
-      <button type="button" class="inline-block mr-3 px-6 py-2.5 bg-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out">Job Seekers</button>
-      <button type="button" class="inline-block px-6 py-2  border-2 border-blue-400 text-black  font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">Employeers</button>
+      <button type="button" class="inline-block mr-3 px-6 py-2.5 bg-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"><a href="{{url('/register')}}">Job Seekers</a></button>
+      <button type="button" class="inline-block px-6 py-2  border-2 border-blue-400 text-black  font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"><a href="{{url('/register')}}">Employers</a></button>
     </nav>
   </div>
 </header>
@@ -40,7 +51,7 @@
                 type="text"
                 placeholder="Search job'"
                 class="w-full rounded-full py-2 px-4" />
-            <button class="bg-blue-400 rounded-full  py-2 px-8">
+            <button class="bg-blue-400 rounded-full  py-1 px-8 border-2 border-blue-400 text-black  font-medium text-xs leading-tight lowercase rounded-full hover:bg-black hover:bg-blue-500 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                 <p class="font-semibold text-base">search</p>
             </button>
    </div>
@@ -168,6 +179,6 @@
   </div>
 </footer>
 
-
+<script src="/js/dropmenus.js"></script>
 </body>
 </html>

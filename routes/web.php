@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('/layouts/app');
 });
 
-Route::get('blade', function () {
-    return view('child');
+Route::get('/register', function () {
+    return view('/components/register');
 });
