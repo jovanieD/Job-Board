@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/auth_create.css" />
@@ -12,8 +11,8 @@
       <div class="forms-container">
         <div class="signin-signup">
 
-        
           <form action="login/authenticate" method="post" name="authenticate" class="sign-in-form">
+          {{ csrf_field() }}
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -28,6 +27,7 @@
 
 
           <form  action="register/create_account" method="post" name="registration" class="sign-up-form">
+          {{ csrf_field() }}
             <h2 class="title">Sign up</h2>
             <div class="input-field">
             <i class="fa fa-user-o" aria-hidden="true"></i>

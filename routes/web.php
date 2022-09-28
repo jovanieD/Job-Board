@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\available_jobController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,7 @@ Route::get('/auth_create', function () {
     return view('/pages/auth_create');
 });
 
+
+Route::get('/register/create_account', [RegisterController::class, 'create_account']);
+
+Route::get('/login/authenticate', [LoginController::class, 'authenticate']);
