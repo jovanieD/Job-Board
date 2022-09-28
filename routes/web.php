@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\available_jobController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,11 @@ Route::get('/', function () {
     return view('/layouts/app');
 });
 
-Route::get('/register', function () {
-    return view('/components/register');
+Route::get('/job', function () {
+    return view('/pages/job_seeker');
 });
+
+Route::get('/auth_create', function () {
+    return view('/pages/auth_create');
+});
+

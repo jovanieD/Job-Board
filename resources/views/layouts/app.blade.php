@@ -13,7 +13,7 @@
   <title>Job Board</title>
 </head>
 <body>
-<header class="text-white body-font">
+<header class=" text-white body-font">
   <div class="container mx-auto flex flex-wrap p-5  md:flex-row items-center">
     <a class="flex ml-6 title-font font-medium items-center text-black mb-4 md:mb-0">
       <span class="ml-3 text-xl">Job Board</span>
@@ -33,8 +33,8 @@
 </div>
         
       </div>
-      <button type="button" class="inline-block mr-3 px-6 py-2.5 bg-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"><a href="{{url('/register')}}">Job Seekers</a></button>
-      <button type="button" class="inline-block px-6 py-2  border-2 border-blue-400 text-black  font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"><a href="{{url('/register')}}">Employers</a></button>
+      <button type="button" class="inline-block mr-3 px-6 py-2.5 bg-blue-400 text-black font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"><a href="{{url('/auth_create')}}">Job Seekers</a></button>
+      <button type="button" class="inline-block px-6 py-2  border-2 border-blue-400 text-black  font-medium text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"><a href="{{url('/auth_create')}}">Employers</a></button>
     </nav>
   </div>
 </header>
@@ -51,7 +51,7 @@
                 type="text"
                 placeholder="Search job'"
                 class="w-full rounded-full py-2 px-4" />
-            <button class="bg-blue-400 rounded-full  py-1 px-8 border-2 border-blue-400 text-black  font-medium text-xs leading-tight lowercase rounded-full hover:bg-black hover:bg-blue-500 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+            <button class="bg-blue-400 rounded-full  py-1 px-8 border-2 border-blue-400 text-black  font-medium text-xs leading-tight lowercase rounded-full hover:bg-black hover:bg-blue-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                 <p class="font-semibold text-base">search</p>
             </button>
    </div>
@@ -75,28 +75,6 @@
         </thead>
         <tbody>
           <tr>
-            <td class="px-4 py-3">Start</td>
-            <td class="px-4 py-3">5 Mb/s</td>
-            <td class="px-4 py-3">15 GB</td>
-            <td class="px-4 py-3 text-lg text-black">Free</td>
-          </tr>
-          <tr>
-            <td class="my-1 px-4 py-3">Pro</td>
-            <td class="my-1 px-4 py-3">25 Mb/s</td>
-            <td class="my-1 px-4 py-3">25 GB</td>
-            <td class="my-1 px-4 py-3 text-lg text-black">$24</td>
-          </tr>
-          <tr>
-            <td class="my-1 px-4 py-3">Business</td>
-            <td class="my-1 px-4 py-3">36 Mb/s</td>
-            <td class="my-1 px-4 py-3">40 GB</td>
-            <td class="my-1 px-4 py-3 text-lg text-black">$50</td>
-          </tr>
-          <tr>
-            <td class="my-1border-b-2  px-4 py-3">Exclusive</td>
-            <td class="my-1border-b-2  px-4 py-3">48 Mb/s</td>
-            <td class="my-1border-b-2  px-4 py-3">120 GB</td>
-            <td class="my-1border-b-2  px-4 py-3 text-lg text-black">$72</td>
           </tr>
         </tbody>
       </table>
