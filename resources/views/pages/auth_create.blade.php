@@ -31,7 +31,7 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
             <i class="fa fa-user-o" aria-hidden="true"></i>
-              <input type="text" placeholder="Username" name="username"/>
+              <input type="text" placeholder="firstname" name="firstname"/>
             </div>
             <div class="input-field">
             <i class="fa fa-user" aria-hidden="true"></i>

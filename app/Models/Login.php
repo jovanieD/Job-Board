@@ -8,12 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Login extends Model
 {
     function authenticate($accounts){
-        $data = DB::table('accounts')
+        $data = DB::table('users')
         ->where('email', $accounts->email)
         ->where('password', $accounts->password)
         ->get();
-        if(sizeof($result) != 0){
-            return "sssss";
-        }}
+        if(sizeof($data) == 0){
+            echo "It is not exist";
+        }else{
+            return redirect('pages/job_seeker');
+        }
+    }
     
 }

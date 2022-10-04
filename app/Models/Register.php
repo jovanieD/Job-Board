@@ -8,12 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Register extends Model
 {
     function create_account($accounts){
-        DB::table('accounts')->insert([
+        DB::table('user')->insert([
             'firstname' => $accounts->firstname,
             'lastname' => $accounts->lastname,
             'email' => $accounts->email,
             'password' => $accounts->password,
             'confirm' => $accounts->confirm
         ]);
+
+        
     }
 }

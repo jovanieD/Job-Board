@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\available_jobController;
-use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AvailableJobsController;
+use App\Http\Controllers;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -16,19 +16,21 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', function () {
-    return view('/layouts/app');
-});
+Route::get('/', [AvailableJobsController::class, 'index']);
+
 
 Route::get('/job', function () {
-    return view('/pages/job_seeker');
+    return view('/pages.job_seeker');
 });
 
 Route::get('/auth_create', function () {
     return view('/pages/auth_create');
 });
 
+Route::get('/pages/job_seeker', function () {
+    return view('/pages/job_seeker');
+});
 
-Route::get('/register/create_account', [RegisterController::class, 'create_account']);
+Route::post('/register/create_account', [RegisterController::class, 'create_account']);
 
-Route::get('/login/authenticate', [LoginController::class, 'authenticate']);
+Route::post('/login/authenticate', [LoginController::class, 'authenticate']);
